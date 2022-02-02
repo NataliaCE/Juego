@@ -380,9 +380,10 @@ GameObject:
   m_Component:
   - component: {fileID: 631612498}
   - component: {fileID: 631612497}
+  - component: {fileID: 631612499}
   - component: {fileID: 631612496}
   m_Layer: 0
-  m_Name: RUN_redhood_0
+  m_Name: Redhood
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -466,12 +467,24 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 631612495}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.35, y: -2.91, z: 0}
-  m_LocalScale: {x: 13.344373, y: 13.344373, z: 13.344373}
+  m_LocalPosition: {x: -10.7824, y: -2.3686, z: 0}
+  m_LocalScale: {x: 14.09292, y: 14.09292, z: 14.09292}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &631612499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631612495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b9e2dc630697d64ea0a188b844471dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1186210999
 GameObject:
   m_ObjectHideFlags: 0

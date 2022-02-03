@@ -1,7 +1,16 @@
 fileFormatVersion: 2
 guid: 5ca00d2cf78b8464b88f544fab653026
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 3446321202622172036
+    second: suelo
+  - first:
+      213: 4176027735701309789
+    second: Fondo_suelo_1
+  - first:
+      213: 1329138289818271975
+    second: Fondo_suelo_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -32,7 +41,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -101,7 +110,70 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: suelo
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 253
+        width: 142
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 2, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b0138dfdac3df20800000000000000
+      internalID: 3446321202622172036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo_suelo_1
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 252
+        width: 97
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d59c7ae991b34f930800000000000000
+      internalID: 4176027735701309789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo_suelo_2
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 229
+        width: 97
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 1}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e00df58b3c027210800000000000000
+      internalID: 1329138289818271975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

@@ -2,14 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movimiento : MonoBehaviour
+public class REDmove : MonoBehaviour
 {
     Rigidbody2D rb;
     public float speed;
     public float jumpForce;
     public bool andando;
     public bool saltando;
-    public bool puedeSaltar;
+    public int vidas = 3;
+
+    bool puedeSaltar;
 
     // Start is called before the first frame update
     void Start()
@@ -41,10 +43,10 @@ public class Movimiento : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Space) && puedeSaltar)
         {
-            //rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             puedeSaltar = false;
             gameObject.GetComponent<Animator>().SetBool("saltando", true);
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 1200f));
+            //gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 1200f));
         }
     }
 
@@ -61,6 +63,12 @@ public class Movimiento : MonoBehaviour
         {
             gameObject.GetComponent<Animator>().SetBool("saltando", false);
             puedeSaltar = true;
+        }
+
+        if(collision.transform.tag == "Enemigo")
+        {
+            vidas--;
+            Debug.Log(vidas);
         }
     }
 

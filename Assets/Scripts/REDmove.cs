@@ -11,8 +11,6 @@ public class REDmove : MonoBehaviour
     public bool saltando;
     public int vidas = 3;
 
-    bool puedeSaltar;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -41,10 +39,9 @@ public class REDmove : MonoBehaviour
             gameObject.GetComponent<Animator>().SetBool("andando", false);
         }
 
-        if(Input.GetKeyDown(KeyCode.Space) && puedeSaltar)
+        if(Input.GetKeyDown(KeyCode.Space) && !saltando)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            puedeSaltar = false;
             gameObject.GetComponent<Animator>().SetBool("saltando", true);
             //gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 1200f));
         }
@@ -62,7 +59,6 @@ public class REDmove : MonoBehaviour
         if(collision.transform.tag == "suelo")
         {
             gameObject.GetComponent<Animator>().SetBool("saltando", false);
-            puedeSaltar = true;
         }
 
         if(collision.transform.tag == "Enemigo")

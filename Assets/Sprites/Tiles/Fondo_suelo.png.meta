@@ -11,6 +11,18 @@ TextureImporter:
   - first:
       213: 1329138289818271975
     second: Fondo_suelo_2
+  - first:
+      213: -4810047335157611299
+    second: Borde_izq
+  - first:
+      213: -1831583746839377530
+    second: Borde_dcha
+  - first:
+      213: -1344217214493993367
+    second: Vertical_dcha
+  - first:
+      213: -815612416904415847
+    second: Vertical_izq
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -157,19 +169,103 @@ TextureImporter:
       name: Fondo_suelo_2
       rect:
         serializedVersion: 2
-        x: 248
-        y: 229
+        x: 247
+        y: 225
         width: 97
-        height: 24
+        height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 1}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 7e00df58b3c027210800000000000000
       internalID: 1329138289818271975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Borde_izq
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 252
+        width: 97
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd4cd13fe674f3db0800000000000000
+      internalID: -4810047335157611299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Borde_dcha
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 252
+        width: 97
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68982415948e496e0800000000000000
+      internalID: -1831583746839377530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vertical_dcha
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 225
+        width: 97
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 966de1db091685de0800000000000000
+      internalID: -1344217214493993367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vertical_izq
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 225
+        width: 97
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 995b30004dc5ea4f0800000000000000
+      internalID: -815612416904415847
       vertices: []
       indices: 
       edges: []

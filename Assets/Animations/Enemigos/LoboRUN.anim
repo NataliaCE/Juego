@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Wolf_RUN
+  m_Name: LoboRUN
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -25,9 +25,11 @@ AnimationClip:
       value: {fileID: -356379855324001321, guid: 86b3a59b27ea22f43b6da05246a7f519, type: 3}
     - time: 0.21666667
       value: {fileID: 4075481181881498101, guid: 86b3a59b27ea22f43b6da05246a7f519, type: 3}
-    - time: 0.3
+    - time: 0.31666666
       value: {fileID: -5908813053278317743, guid: 86b3a59b27ea22f43b6da05246a7f519, type: 3}
-    - time: 0.41666666
+    - time: 0.45
+      value: {fileID: 1402178239328383024, guid: 86b3a59b27ea22f43b6da05246a7f519, type: 3}
+    - time: 0.5
       value: {fileID: 1402178239328383024, guid: 86b3a59b27ea22f43b6da05246a7f519, type: 3}
     attribute: m_Sprite
     path: 
@@ -53,12 +55,13 @@ AnimationClip:
     - {fileID: 4075481181881498101, guid: 86b3a59b27ea22f43b6da05246a7f519, type: 3}
     - {fileID: -5908813053278317743, guid: 86b3a59b27ea22f43b6da05246a7f519, type: 3}
     - {fileID: 1402178239328383024, guid: 86b3a59b27ea22f43b6da05246a7f519, type: 3}
+    - {fileID: 1402178239328383024, guid: 86b3a59b27ea22f43b6da05246a7f519, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.43333334
+    m_StopTime: 0.51666665
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

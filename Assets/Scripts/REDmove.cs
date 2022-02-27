@@ -63,6 +63,7 @@ public class REDmove : MonoBehaviour
 
         if(collision.transform.tag == "Enemigo")
         {
+            Physics2D.IgnoreCollision(collision.gameObject.GetComponent<Collider2D>(), GetComponent<Collider2D>());
             vidas--;
             Debug.Log(vidas);
         }

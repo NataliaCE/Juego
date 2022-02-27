@@ -13,13 +13,29 @@ public class EfectoFondo : MonoBehaviour
     {
         posicion = transform.position.x; //Posicion al comienzo
         tamanyo = GetComponent<SpriteRenderer>().bounds.size.x; //Longitud de sprite
+        Debug.Log(" tamaño : ");
+        
 
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        float distTemp = camara.transform.position.x * (1 - efectoParallax); // Cuanto se ha movido el objeto en relación a la cámara
         float distancia = (camara.transform.position.x * efectoParallax);
+
         transform.position = new Vector3(posicion + distancia, transform.position.y, transform.position.z);
+
+        if(transform.tag == "Background")
+        {
+            if (distTemp > posicion + tamanyo)
+            {
+                posicion += tamanyo;
+            }
+            else if (distTemp < posicion - tamanyo)
+            {
+                posicion -= tamanyo;
+            }
+        }
     }
 }

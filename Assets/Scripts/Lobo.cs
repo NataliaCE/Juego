@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WOLFmove : MonoBehaviour
+public class Lobo : MonoBehaviour
 {
     Rigidbody2D rb;
     public float speed;

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class REDmove : MonoBehaviour
+public class RedHood : MonoBehaviour
 {
     Rigidbody2D rb;
     public float speed;
@@ -10,6 +10,7 @@ public class REDmove : MonoBehaviour
     public bool andando;
     public bool saltando;
     public int vidas = 3;
+    bool salta = false;
 
     // Start is called before the first frame update
     void Start()
@@ -39,10 +40,11 @@ public class REDmove : MonoBehaviour
             gameObject.GetComponent<Animator>().SetBool("andando", false);
         }
 
-        if(Input.GetKeyDown(KeyCode.Space) && !saltando)
+        if(Input.GetKeyDown(KeyCode.Space) && !salta)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             gameObject.GetComponent<Animator>().SetBool("saltando", true);
+            salta = true;
             //gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 1200f));
         }
     }
@@ -58,6 +60,7 @@ public class REDmove : MonoBehaviour
     {
         if(collision.transform.tag == "suelo")
         {
+            salta = false;
             gameObject.GetComponent<Animator>().SetBool("saltando", false);
         }
 
@@ -65,7 +68,10 @@ public class REDmove : MonoBehaviour
         {
             Physics2D.IgnoreCollision(collision.gameObject.GetComponent<Collider2D>(), GetComponent<Collider2D>());
             vidas--;
-            Debug.Log(vidas);
+            if(vidas <= 0)
+            {
+                
+            }
         }
     }
 

@@ -13,7 +13,6 @@ public class EfectoFondo : MonoBehaviour
     {
         posicion = transform.position.x; //Posicion al comienzo
         tamanyo = GetComponent<SpriteRenderer>().bounds.size.x; //Longitud de sprite
-        Debug.Log(" tamaño : ");
         
 
     }

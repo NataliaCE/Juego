@@ -15,11 +15,11 @@ TagManager:
   - Fondo
   - Water
   - UI
+  - Limites
+  - 
+  - Enemigos
+  - 
   - Personajes
-  - 
-  - 
-  - 
-  - 
   - 
   - 
   - 
@@ -50,6 +50,9 @@ TagManager:
     locked: 0
   - name: Suelo
     uniqueID: 3175873481
+    locked: 0
+  - name: Enemigos
+    uniqueID: 1965395287
     locked: 0
   - name: Personajes
     uniqueID: 2212992209

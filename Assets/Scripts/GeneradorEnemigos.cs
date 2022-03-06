@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Generador : MonoBehaviour
+public class GeneradorEnemigos : MonoBehaviour
 {
     public GameObject enemigo;
     public float probabilidad;
@@ -35,7 +35,6 @@ public class Generador : MonoBehaviour
             {
                 GameObject.Instantiate(enemigo, transform.position, transform.rotation);
                 cantidad++;
-                Debug.Log("Lobos: " + cantidad);
             }
         }
     }

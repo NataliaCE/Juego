@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Destructor : MonoBehaviour
 {
-    public Generador generadorLobos;
+    public GeneradorEnemigos generadorLobos;
+    public GeneradorPlataformas generadorPlataformas;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +24,13 @@ public class Destructor : MonoBehaviour
         if(collision.gameObject.tag == "Enemigo")
         {
             generadorLobos.cantidad--;
-            Debug.Log("Lobos: " + generadorLobos.cantidad);
+            collision.gameObject.SetActive(false);
+            Destroy(collision.gameObject, 0.5f);
+        }
+
+        if(collision.gameObject.tag == "Plataforma")
+        {
+            generadorPlataformas.Cantidad--;
             collision.gameObject.SetActive(false);
             Destroy(collision.gameObject, 0.5f);
         }

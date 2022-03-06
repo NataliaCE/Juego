@@ -19,7 +19,6 @@ public class MoverSuelo : MonoBehaviour
     void Update()
     {
         float distancia = (camara.transform.position.x + 20) - transform.position.x;
-        Debug.Log((camara.transform.position.x + 20) + " - " + transform.position.x + " = " + distancia);
         if(tamSuelo <= distancia)
         {
             transform.position = new Vector3(camara.transform.position.x, transform.position.y, transform.position.z);

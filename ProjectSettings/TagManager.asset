@@ -8,6 +8,8 @@ TagManager:
   - Enemigo
   - UI
   - Background
+  - Hueco
+  - Plataforma
   layers:
   - Default
   - TransparentFX
@@ -18,7 +20,7 @@ TagManager:
   - Limites
   - 
   - Enemigos
-  - 
+  - Extras
   - Personajes
   - 
   - 
@@ -56,4 +58,7 @@ TagManager:
     locked: 0
   - name: Personajes
     uniqueID: 2212992209
+    locked: 0
+  - name: UI
+    uniqueID: 3130575009
     locked: 0

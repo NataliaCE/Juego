@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RedHood : MonoBehaviour
 {
@@ -9,13 +10,23 @@ public class RedHood : MonoBehaviour
     public float jumpForce;
     public bool andando;
     public bool saltando;
-    public int vidas = 3;
-    bool salta = false;
+    private int vidas;
+    private bool salta;
+    public float gravedadNormal;
+    public float gravedadCaida;
+
+    public int Vidas
+    {
+        get { return vidas; }
+        set { vidas = value; }
+    }
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        vidas = 20;
+        salta = false;
     }
 
     // Update is called once per frame
@@ -45,7 +56,15 @@ public class RedHood : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             gameObject.GetComponent<Animator>().SetBool("saltando", true);
             salta = true;
-            //gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 1200f));
+        }
+
+        if(rb.velocity.y >= 0)
+        {
+            rb.gravityScale = gravedadNormal;
+        } 
+        else if(rb.velocity.y < 0)
+        {
+            rb.gravityScale = gravedadCaida;
         }
     }
 
@@ -58,7 +77,7 @@ public class RedHood : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.transform.tag == "suelo")
+        if(collision.transform.tag == "suelo" || collision.transform.tag == "Plataforma")
         {
             salta = false;
             gameObject.GetComponent<Animator>().SetBool("saltando", false);
@@ -70,8 +89,16 @@ public class RedHood : MonoBehaviour
             vidas--;
             if(vidas <= 0)
             {
-                
+                gameObject.SetActive(false);
+                SceneManager.LoadScene("Muerte");
             }
+        }
+
+        if(collision.transform.tag == "Hueco")
+        {
+            vidas = 0;
+            gameObject.SetActive(false);
+            SceneManager.LoadScene("Muerte");
         }
     }
 

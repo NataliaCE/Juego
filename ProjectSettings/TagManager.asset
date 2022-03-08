@@ -10,6 +10,7 @@ TagManager:
   - Background
   - Hueco
   - Plataforma
+  - Manzana
   layers:
   - Default
   - TransparentFX

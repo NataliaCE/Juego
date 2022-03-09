@@ -398,7 +398,7 @@ GameObject:
   - component: {fileID: 110316648}
   - component: {fileID: 110316647}
   m_Layer: 5
-  m_Name: PanelVidas (1)
+  m_Name: PanelManzanas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1653,12 +1653,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b9e2dc630697d64ea0a188b844471dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 12
   jumpForce: 23
   andando: 0
   saltando: 0
   gravedadNormal: 1
-  gravedadCaida: 5
+  gravedadCaida: 6
 --- !u!50 &631612500
 Rigidbody2D:
   serializedVersion: 4
@@ -3025,7 +3025,7 @@ GameObject:
   - component: {fileID: 1032932680}
   - component: {fileID: 1032932679}
   m_Layer: 5
-  m_Name: Corazon
+  m_Name: Imagen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3619,6 +3619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vidaTxt: {fileID: 1542592488}
+  manzanaTxt: {fileID: 2098339608}
   pj: {fileID: 631612499}
 --- !u!4 &1224595319
 Transform:
@@ -6492,7 +6493,7 @@ GameObject:
   - component: {fileID: 2098339609}
   - component: {fileID: 2098339608}
   m_Layer: 5
-  m_Name: Vidas
+  m_Name: Manzanas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

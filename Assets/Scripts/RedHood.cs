@@ -11,6 +11,7 @@ public class RedHood : MonoBehaviour
     public bool andando;
     public bool saltando;
     private int vidas;
+    private int manzanas;
     private bool salta;
     public float gravedadNormal;
     public float gravedadCaida;
@@ -21,11 +22,18 @@ public class RedHood : MonoBehaviour
         set { vidas = value; }
     }
 
+    public int Manzanas
+    {
+        get { return manzanas; }
+        set { manzanas = value; }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        vidas = 20;
+        vidas = 3;
+        manzanas = 0;
         salta = false;
     }
 
@@ -99,6 +107,15 @@ public class RedHood : MonoBehaviour
             vidas = 0;
             gameObject.SetActive(false);
             SceneManager.LoadScene("Muerte");
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.transform.tag == "Manzana")
+        {
+            manzanas++;
+      
         }
     }
 

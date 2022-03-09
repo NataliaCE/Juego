@@ -26,11 +26,5 @@ public class Destructor : MonoBehaviour
             collision.gameObject.SetActive(false);
             Destroy(collision.gameObject, 0.5f);
         } 
-        /*else if(collision.gameObject.tag == "Plataforma")
-        {
-            //generadorPlataformas.Cantidad--;
-            collision.gameObject.SetActive(false);
-            Destroy(collision.gameObject, 0.5f);
-        }*/
     }
 }
